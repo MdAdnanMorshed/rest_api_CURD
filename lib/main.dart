@@ -1,3 +1,4 @@
+import 'package:fetch_data/route_generator.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,6 +15,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      initialRoute: '/result',
+      onGenerateRoute: RouteGenerator.generatorRoute,
       home: const Text(''),
     );
   }
