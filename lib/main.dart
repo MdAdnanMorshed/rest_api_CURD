@@ -1,7 +1,10 @@
 import 'package:fetch_data/route_generator.dart';
 import 'package:flutter/material.dart';
 
+import 'src/repositories/all_repository.dart';
+
 void main() {
+
   runApp(const MyApp());
 }
 
@@ -17,7 +20,6 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/result',
       onGenerateRoute: RouteGenerator.generatorRoute,
-      home: const Text(''),
     );
   }
 }
